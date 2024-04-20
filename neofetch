@@ -1153,8 +1153,10 @@ get_distro() {
                 10.14*) codename="macOS Mojave" ;;
                 10.15*) codename="macOS Catalina" ;;
                 10.16*) codename="macOS Big Sur" ;;
-                11.*)  codename="macOS Big Sur" ;;
-                12.*)  codename="macOS Monterey" ;;
+                11.*)   codename="macOS Big Sur" ;;
+                12.*)   codename="macOS Monterey" ;;
+                13.*)   codename="macOS Ventura" ;;
+                14.*)   codename="macOS Sonoma" ;;
                 *)      codename=macOS ;;
             esac
 
