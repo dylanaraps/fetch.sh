@@ -10739,6 +10739,32 @@ TTTTTTTTTT
 EOF
         ;;
 
+        "openSUSE Tumbleweed-Slowroll"* | "openSUSE_Slowroll"*)
+            set_colors 2 7
+            read -rd '' ascii_data <<'EOF'
+${c2}              _aaaymQQmwaaa,
+          ,wWQQQD????????$QQQQa,.
+       _wQQB?"              ??QQQa,
+     sQQD^                      ?QQ6\
+    yWW'                          4QQg
+  ,QQD          .aaaaaaaa          ^4Q6
+ ,mQP        _wWQW?????YWWQa,        4Qm
+ jQ@        wWW?'        ^4QQc       ^$QL
+,QQ'       jWW'            )QW\       ]QQ
+|QQ       ,QW'              ]QQ       ^QQ|
+|QQ       |QQ               ]QQ        QQ|
+|QQ        4Qg              ]QQ       .QQ|
+'QQ6       '$WQac.         _QQ(       jQQ
+ ]QQw        "?QWQQf      _mQP       ,QQ(
+  4QQga                  wQQP       ,mQ?
+   4QQQga,            saQWP'       jQQf
+    ?QQQQQQwaaaaaaaayWWW?'       _mQ@'
+      ?WQQQP?9VWUV???^        _amQP^
+        "4QQQaa,          ,awQQQ?^
+           "?VQQQQQQQQQQQQQQP?'
+EOF
+        ;;
+
         "openSUSE Tumbleweed"* | "openSUSE_Tumbleweed"*)
             set_colors 2 7
             read -rd '' ascii_data <<'EOF'
