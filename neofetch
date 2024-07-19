@@ -1545,26 +1545,27 @@ get_packages() {
 
     case $os in
         Linux|BSD|"iPhone OS"|Solaris)
-            # Package Manager Programs.
-            has kiss       && tot kiss l
-            has cpt-list   && tot cpt-list
-            has pacman-key && tot pacman -Qq --color never
-            has dpkg       && tot dpkg-query -f '.\n' -W
-            has xbps-query && tot xbps-query -l
-            has apk        && tot apk info
-            has opkg       && tot opkg list-installed
-            has pacman-g2  && tot pacman-g2 -Q
-            has lvu        && tot lvu installed
-            has tce-status && tot tce-status -i
-            has pkg_info   && tot pkg_info
-            has pkgin      && tot pkgin list
-            has tazpkg     && pkgs_h=6 tot tazpkg list && ((packages-=6))
-            has sorcery    && tot gaze installed
-            has alps       && tot alps showinstalled
-            has butch      && tot butch list
-            has swupd      && tot swupd bundle-list --quiet
-            has pisi       && tot pisi li
-            has pacstall   && tot pacstall -L
+		# Package Manager Programs.
+		has kiss	&& tot kiss l
+		has cpt-list	&& tot cpt-list
+		has pacman-key	&& tot pacman -Qq --color never
+		has wpm		&& tot wpkg list-only-pkgs
+		has dpkg	&& tot dpkg-query -f '.\n' -W
+		has xbps-query	&& tot xbps-query -l
+		has apk		&& tot apk info
+		has opkg	&& tot opkg list-installed
+		has pacman-g2	&& tot pacman-g2 -Q
+		has lvu		&& tot lvu installed
+		has tce-status	&& tot tce-status -i
+		has pkg_info	&& tot pkg_info
+		has pkgin	&& tot pkgin list
+		has tazpkg	&& pkgs_h=6 tot tazpkg list && ((packages-=6))
+		has sorcery	&& tot gaze installed
+		has alps	&& tot alps showinstalled
+		has butch	&& tot butch list
+		has swupd	&& tot swupd bundle-list --quiet
+		has pisi	&& tot pisi li
+		has pacstall	&& tot pacstall -L
 
             # Using the dnf package cache is much faster than rpm.
             if has dnf && type -p sqlite3 >/dev/null && [[ -f /var/cache/dnf/packages.db ]]; then
